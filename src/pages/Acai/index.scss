@@ -1,0 +1,13 @@
+.acai {
+    .div-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: blueviolet;
+    }
+
+    input {
+        width: 200px;
+        height: 25px
+    }
+}
