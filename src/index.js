@@ -6,7 +6,11 @@ import './index.css';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom' 
 
+
+import Home from './pages/home';
 import Acai from './pages/Acai';
+import Signo from './pages/signo';
+import Gramas from './pages/gramas';
 
 
 
@@ -15,7 +19,12 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
     <Routes>
+
+    
+      <Route path='/home' element={<Home/>}/>
       <Route path='/acai' element={<Acai />} />
+      <Route path='/signo' element={<Signo/>}/> 
+      <Route path='/gramas' element={<Gramas/>}/>
     </Routes>
     </BrowserRouter>
   </React.StrictMode>
