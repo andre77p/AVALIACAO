@@ -11,6 +11,8 @@ export default function Index(){
         
         <a href="/gramas">Gramas</a>
 
+        <a href="/salario">salario</a>
+
         </div>
     )
 }
