@@ -13,7 +13,7 @@ import Signo from './pages/signo';
 import Gramas from './pages/gramas';
 import Salario from './pages/salario';
 import Combustivel from './pages/combustivel';
-import Febre from '.page/febre';
+import Febre from './pages/febre';
 
 
 
