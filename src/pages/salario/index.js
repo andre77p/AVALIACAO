@@ -1,56 +1,55 @@
-import { useState, useRef, useEffect} from 'react';
+import { useState } from 'react'
 
-export default function Index(){
-  
+export default function Salario() {
     const [salario, setSalario] = useState(0);
     const [bonus, setBonus] = useState(0);
-    const [desc, setDesc] = useState(0);
+    const [desconto, setDesconto] = useState(0);
+    const [resp, setResp] = useState(0);
 
-    const [total, setTotal] = useState('');
-  
-  
-  
-    function salario(salario, bonus, desc)
+   function calcularSalario(salario, bonus, desc) {
 
-    {
-        let bon = (salario * 10) / 100;
-        let meio = salario + bon;
-        let final = meio - desc;
-
+        if(salario < 0 || bonus < 0 || desc < 0) 
+                throw new Error('Alguma informação está inválida!')
+    
         let total = 0;
-
-        return final
-        setTotal (final); 
-
-
-
+        let bonussalario = (salario * bonus) / 100;
+        let soldo = salario + bonussalario;
+        total = soldo - desc;
+    
+        return total;
     }
 
-    function salarioClick(){
-        let a = salarioliquido(salario,bonus,desc);
-         setResposta(a);
+    function calculo() {
+        try{
+            let resultado = calcularSalario(salario, bonus, desconto);
+
+            setResp('Seu salário líquido é de R$' + resultado);
+        } catch(err) {
+            setResp(err.message)
+        }
     }
 
-  
-  
-  
-  
     return(
-        <div >
-            <h1>Salário</h1>
+        <main >
+            <div>
+                <div>
+                    Digite seu salário: <input type='number' placeholder='R$' value={salario} onChange={e => setSalario(Number(e.target.value))} />
+                </div>
 
-            <input type="text" value={salario} onChange={e => setSalario(Number(e.target.value))} ></input>
-        <input type="text" value={bonus} onChange={e => setBonus(Number(e.target.value))}></input>
-        <input type="text" value={desc} onChange={e => setDesc(Number(e.target.value))}></input>
-         
-        <button className='' onClick={calcularClick} disabled={carregando}>
-            Calcular
-        </button>
+                <div>
+                    Digite seu bônus: <input type='number' placeholder='Em porcentagem' value={bonus} onChange={e => setBonus(Number(e.target.value))} />
+                </div>
+                
+                <div>
+                    Digite seu desconto: <input type='number' placeholder='Em reais' value={desconto} onChange={e => setDesconto(Number(e.target.value))} />
+                </div>
 
-        <div>
-            O total à pagar é R$<span>{resposta} </span>
-        </div> 
-       
-        </div>
+                <div>
+                    Resultado: {resp}
+                </div>
+
+                <button onClick={calculo}>Calcular</button>
+            </div>
+        </main>
     )
 }
