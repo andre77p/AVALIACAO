@@ -14,6 +14,7 @@ import Gramas from './pages/gramas';
 import Salario from './pages/salario';
 import Combustivel from './pages/combustivel';
 import Febre from './pages/febre';
+import Filme from './pages/filme';
 
 
 
@@ -23,7 +24,6 @@ root.render(
     <BrowserRouter>
     <Routes>
 
-    
       <Route path='/home' element={<Home/>}/>
       <Route path='/acai' element={<Acai />} />
       <Route path='/signo' element={<Signo/>}/> 
@@ -31,7 +31,8 @@ root.render(
       <Route path='/salario' element={<Salario/>}/>
       <Route path='/combustivel' element={<Combustivel/>}/>
       <Route path='febre' element={<Febre/>}/>
-
+      <Route path='filme' element={<Filme/>}/>
+    
     </Routes>
     </BrowserRouter>
   </React.StrictMode>
