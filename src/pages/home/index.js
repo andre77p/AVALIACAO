@@ -17,7 +17,13 @@ export default function Index(){
 
         <a href="febre">  febre</a>
 
-        <a href="filme">  filme</a>
+        <a href="cinema">  filme</a>
+
+        <a href="sequencia">  sequencia</a>
+
+        <a href="linha">  llinha</a>
+
+        <a href="retangulo" >retangulo</a>
 
         </div>
     )
