@@ -10,10 +10,7 @@ function retanguloLinhas(base, altura) {
         let arraygrande = [];
         let array = [];
     
-       /* for(let i = 0; i < altura; i++) {
-            for(let h = 0; h < base; h++) {
-                array[h] = '*';
-            }*/
+    
     
     
         for(let i = 0; i < altura; i++) {
