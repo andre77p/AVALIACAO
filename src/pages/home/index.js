@@ -6,25 +6,27 @@ export default function Index(){
            
         <h1 className='provis'>Provinha</h1>
 
-        <a href="/acai">Açai</a>
+        <a href="/acai">    Açaí</a>
 
         <a href="/signo">  Signo</a>
         
         <a href="/gramas">  Gramas</a>
 
-        <a href="/salario">  Salario</a>
+        <a href="/salario">    Salário</a>
 
-        <a href="/combustivel">  Combustivel</a>
+        <a href="/combustivel">    Combustível</a>
 
-        <a href="febre">  Febre</a>
+        <a href="/febre">    Febre</a>
 
-        <a href="cinema">  Filme</a>
+        <a href="/cinema">   Filme</a>
 
-        <a href="sequencia">  Sequência</a>
+        <a href="/sequencia">    Sequência</a>
 
-        <a href="linha">  Linha</a>
+        <a href="/linha">    Linha</a>
 
-        <a href="retangulo" >Retangulo</a>
+        <a href="/retangulo">    Retangulo</a>
+
+        <a href="/juros">   Juros</a>
 
         </div>
     )

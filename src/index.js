@@ -19,6 +19,7 @@ import Orcamento from './pages/orcamento';
 import Sequencia from './pages/sequencia';
 import Linha from './pages/linha';
 import Retangulo from './pages/retangulo';
+import Juros from './pages/juros';
 
 
 
@@ -41,6 +42,7 @@ root.render(
       <Route path='/sequencia' element={<Sequencia/>}/>
       <Route path='/linha' element={<Linha/>}/>
       <Route path='/retangulo' element={<Retangulo/>}/>
+      <Route path='/juros' element={<Juros/>}/>
     
     </Routes>
     </BrowserRouter>
