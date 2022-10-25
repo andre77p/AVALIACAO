@@ -20,6 +20,7 @@ import Sequencia from './pages/sequencia';
 import Linha from './pages/linha';
 import Retangulo from './pages/retangulo';
 import Juros from './pages/juros';
+import Media from './pages/media';
 
 
 
@@ -43,6 +44,7 @@ root.render(
       <Route path='/linha' element={<Linha/>}/>
       <Route path='/retangulo' element={<Retangulo/>}/>
       <Route path='/juros' element={<Juros/>}/>
+      <Route path='/media' element={<Media/>}/>
     
     </Routes>
     </BrowserRouter>

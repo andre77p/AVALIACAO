@@ -28,6 +28,8 @@ export default function Index(){
 
         <a href="/juros">   Juros</a>
 
+        <a href="/media">     Media</a>     
+
         </div>
     )
 }
