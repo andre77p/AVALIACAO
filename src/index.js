@@ -21,8 +21,9 @@ import Linha from './pages/linha';
 import Retangulo from './pages/retangulo';
 import Juros from './pages/juros';
 import Media from './pages/media';
-
-
+import Cafe from './pages/cafe';
+import Aluno from './pages/aluno';
+import Sorvete from './pages/sorvete';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -45,6 +46,10 @@ root.render(
       <Route path='/retangulo' element={<Retangulo/>}/>
       <Route path='/juros' element={<Juros/>}/>
       <Route path='/media' element={<Media/>}/>
+      <Route path='/cafe' element={<Cafe/>}/>
+      <Route path='/aluno' element={<Aluno/>}/>
+      <Route path='/sorvete' element={<Sorvete/>}/>
+     
     
     </Routes>
     </BrowserRouter>
